@@ -9,6 +9,9 @@ function createGrid(size) {
     square.classList.add("square");
     square.style.width = `${squareSize}%`;
     square.style.height = `${squareSize}%`;
+    square.addEventListener("mouseenter", () => {
+    square.style.backgroundColor = "black";
+});
     container.appendChild(square);
   }
 }
